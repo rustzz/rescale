@@ -10,8 +10,7 @@ import (
 )
 
 var (
-	//url = "https://2ch.hk/makaba/templates/img/anon.jpg"
-	url = "https://sun9-18.userapi.com/impg/EQ9e20QOCBfGar1CdxVl0b_XMHF9vh40DPdnFA/4PlTo_QUUdc.jpg?size=735x693&quality=96&sign=a698bde9dba7e2e3489fbf56565cbec5&type=album"
+	url = "https://2ch.hk/makaba/templates/img/anon.jpg"
 )
 
 func GetImage(url string) (imageBytes []byte, err error) {

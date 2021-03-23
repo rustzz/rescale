@@ -26,7 +26,6 @@ func Make(srcImageBytes []byte, countOfRescale int) ([]byte, error) {
 		uint(float64(im.Bounds().Size().Y) / (1.2 * float64(countOfRescale))),
 		0, 0,
 	); err != nil { return nil, err }
-
 	if err = mw.ResizeImage(
 		uint(im.Bounds().Size().X), uint(im.Bounds().Size().Y),
 		imagick.FILTER_LANCZOS2,
